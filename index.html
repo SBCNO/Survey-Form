@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="background">
+        <header>
+            <h1 id="title" class="text-center">Customer Satisfaction Survey Form</h1>
+            <p id="description" class="text-center">Please tell us about your experience and how we can improve!</p>
+        </header>
+
+        <form id="survey-form">
+            
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Please Enter Your First and Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please Enter Your Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">How many times have you visited?</label>
+                <input type="number" name="number" id="number" min="1" max="999" class="form-control" placeholder="Number of Visits">
+            </div>
+
+            <div class="form-group">
+                <p>What type of service did you have performed?</p>
+                <select id="dropdown" name="service" class="form-control" required>
+                    <option disabled selected value>Select your service</option>
+                    <option value="oil-change">Oil-Change</option>
+                    <option value="tune-up">Tune-Up</option>
+                    <option value="battery">Battery</option>
+                    <option value="tires">Tires</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend our shop to a friend?</p>
+               
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>Definitely
+                </label>
+                
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="no" type="radio" class="input-radio">No
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Please select what area we can improve on. <span>(Check all that apply)</span></p>
+                <label>
+                    <input name="prefer" value="customer-service" type="checkbox" class="input-checkbox">Customer-Service
+                </label>
+                <label>
+                    <input name="prefer" value="price" type="checkbox" class="input-checkbox">Price
+                </label>
+                <label>
+                    <input name="prefer" value="cleanliness" type="checkbox" class="input-checkbox">Cleanliness
+                </label>
+                <label>
+                    <input name="prefer" value="schedule" type="checkbox" class="input-checkbox">Schedule
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Please leave any additional comments or suggestions.</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter comments or suggestions here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        
+        </form>
+        
+        </div>
+    
+    </body>    
+    
+    </html>
